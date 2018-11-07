@@ -1,0 +1,16 @@
+BoldAsFont=-1
+Term=xterm-256color
+BackgroundColour=18,18,18
+CursorColour=255,128,0
+CursorType=block
+CopyAsRTF=no
+BackspaceSendsBS=no
+DeleteSendsDEL=no
+BellType=0
+BellFlash=yes
+ScrollbackLines=10000
+ScrollMod=off
+PgUpDnScroll=yes
+MiddleClickAction=void
+Rows=35
+Columns=100
