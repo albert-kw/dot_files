@@ -14,3 +14,5 @@ PgUpDnScroll=yes
 MiddleClickAction=void
 Rows=35
 Columns=100
+Logging=yes
+Log=/var/log/mintty/mintty_%d.log
