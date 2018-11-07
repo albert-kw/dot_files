@@ -1,0 +1,139 @@
+[core]
+	editor = vim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	pager = less -r
+	summary = yes
+
+[http]
+	sslverify = true
+
+[color]
+	ui = true
+        pager = true
+        interactive = true
+
+[color "branch"]
+	current = yellow bold
+	local = green bold
+	remote = cyan bold
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+
+[color "status"]
+	added = green bold
+	changed = yellow bold
+	untracked = red bold
+
+[alias]
+	ll = "!f() { \
+            git log \
+            --pretty=format:'%C(yellow)%h%x20%Creset%C(auto)%d %x20%s \
+            %n%>(60)%C(cyan)%ad %C(magenta)[%cn]%n%Creset' \
+            --graph --decorate --all --date=relative; \
+            }; f"
+
+	lol = "!f() { \
+            git log \
+            --pretty=format:'%C(yellow)%h %Creset%C(auto)%d %s' \
+            --graph --decorate --all; \
+            }; f"
+	#########
+	s = status
+    st = status
+	sb = status -s -b
+	##########
+	a = add
+	aa = add --all
+	##########
+	co = checkout
+	#cob = checkout branch
+    cob = checkout -b
+	##########
+	b = branch -v
+	ba = branch -avv
+	bd = branch -d
+	br = branch -rvv
+    bu = branch -u
+	#########
+	cm = commit -m
+	cam = commit -am
+	cd = commit --amend
+    cdn = commit --amend --no-edit
+	cad = commit -a --amend
+	##########
+    c = clone
+    csb = clone --single-branch --branch
+    ##########
+	f = fetch -vv
+	fo = fetch -vv --progress origin
+    fom = fo master
+    fa = fetch --all -vv
+	##########
+	m = merge
+	##########
+	pr = prune -v
+	#########
+	lsr = ls-remote
+    lsro = ls-remote origin
+	#########
+	fk = fsck
+	fp = format-patch
+	########
+	ps = push
+	psf = push -f
+	psu = push -u
+	pso = push origin
+	psfo = push -f origin
+	psuo = push -u origin
+	pl = pull
+	plr = pull --rebase
+	plu = pull -u
+	plo = pull origin
+	plro = pull --rebase origin
+	pluo = pull -u origin
+	##########
+    sc = stash clear
+    sd = stash drop
+    sl = stash list
+    ss = stash save
+    sp = stash pop
+    sw = stash show
+    sa = stash apply
+    ##########
+    rb = rebase
+    rba = rebase --abort
+    rbc = rebase --continue
+    rbi = rebase --interactive
+    rbs = rebase --skip
+    ##########
+	rs = reset
+    res = reset
+    rest = reset
+	rH = reset HEAD
+	rh = reset --hard
+	rsm = reset --mixed
+	rss = reset --soft
+	rhH = reset --hard HEAD
+	rsmH = reset --mixed HEAD
+	rssH = reset --soft HEAD
+	#########
+	rt = remote -v
+	rta = remote add
+    rtao = remote add origin
+    rtat = remote add --track
+	rtm = remote rm
+    rtu = remote update
+	rtp = remote prune
+	rtpo = remote prune origin
+	rts = remote show
+	rtso = remote show origin
+    rtab = remote set-branches --add
+    rtabo = remote set-branches --add origin
+    rtabom = remote set-branches --add origin master
+	#########
+	w = show
