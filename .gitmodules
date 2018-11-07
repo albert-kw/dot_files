@@ -1,0 +1,6 @@
+[submodule ".bash"]
+	path = .bash
+	url = https://github.com/albert-kw/dot_bash.git
+[submodule "dot_bash"]
+	path = .bash
+	url = https://github.com/albert-kw/dot_bash.git
