@@ -7,6 +7,10 @@
 [http]
 	sslverify = true
 
+[user]
+	name = Albert Wong
+	email = albert.wong@tdinsurance.com
+
 [color]
 	ui = true
         pager = true
