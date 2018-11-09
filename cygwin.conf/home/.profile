@@ -8,4 +8,4 @@ export USERPROFILE="$HOME"
 . "$HOME/.bashrc"
 
 # Start a new bash session with new env
-exec /bin/bash --login -i
+exec /bin/bash -i
