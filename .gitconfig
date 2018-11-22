@@ -63,6 +63,7 @@
 	bd = branch -d
 	br = branch -rvv
     bu = branch -u
+  bD = branch -D
 	#########
 	cm = commit -m
 	cam = commit -am
