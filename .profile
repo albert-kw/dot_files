@@ -6,6 +6,9 @@
 # with this software. 
 # If not, see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
+export HOMEPATH="$HOME"
+export USERPROFILE="$HOME"
+
 #Set user-defined locale
 export LANG=$(locale -uU)
 
