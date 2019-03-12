@@ -1,0 +1,14 @@
+# Global .gitignore file for all projects
+
+# temp
+*~
+
+## auto-generated tag files
+tags
+.tags
+
+## Vim
+*.sw[a-p]
+
+## log
+*.log
